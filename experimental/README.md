@@ -13,6 +13,8 @@
 
 ### Test without delay ESP-IDF framework:
 
+- Test: GPIO 02
+
 ```
 @ 80Mhz: 1,1 μs => 0.91 Mhz
 @ 160Mhz: 0,55 μs => 1.8 Mhz
@@ -35,7 +37,7 @@
 #include "driver/gpio.h"
 #include "sdkconfig.h"
 
-#define BLINK_GPIO CONFIG_BLINK_GPIO
+#define BLINK_GPIO CONFIG_BLINK_GPIO //gpio 02
 
 void app_main()
 {
