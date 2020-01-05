@@ -1,11 +1,30 @@
 
 # Experimental data from esp-idf
 
-## test without delay @ 40mhz:
+## Materials:
 
-gpio-2 (led) frequency: 0,55us => 1.8Mhz
+- Analog osciloscope 20Mhz
+- Esp32 devkit v1 development board
+- Example config file: "sdkconfig-test-without-delay"
 
-### souce:
+
+
+## Results:
+
+### Test without delay ESP-IDF framework:
+
+
+@ 80Mhz: 1,1 μs => 0.91 Mhz
+@ 160Mhz: 0,55 μs => 1.8 Mhz
+@ 240Mhz: 0.35 μs => 2.86 Mhz
+
+#### Note:
+
+- detected some oscilation on osciloscope near 5 seconds of interval
+
+
+
+### Source:
 ```
 
 
