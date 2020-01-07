@@ -15,5 +15,5 @@ https://github.com/espressif/esp-face This is a component which provides functio
 - https://github.com/espressif/esp-face/blob/master/face_detection/README.md face detection
 - https://github.com/espressif/esp-face/blob/master/face_recognition/README.md face recognition
 - https://arxiv.org/abs/1801.07698 ArcFace: Additive Angular Margin Loss for Deep Face Recognition
--
+- https://github.com/espressif/esp-face/blob/master/lib/README.md DL lib
 
