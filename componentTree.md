@@ -1,4 +1,4 @@
-.```
+```
 ├── app_trace
 │   ├── gcov
 │   ├── include
