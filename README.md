@@ -18,3 +18,18 @@ https://github.com/espressif/esp-face This is a component which provides functio
 - https://arxiv.org/abs/1801.07698 ArcFace: Additive Angular Margin Loss for Deep Face Recognition
 - https://github.com/espressif/esp-face/blob/master/lib/README.md DL lib
 
+
+quick template:
+
+git clone --recursive https://github.com/espressif/esp-idf.git
+
+git clone https://github.com/espressif/crosstool-NG.git
+
+git clone https://github.com/tamnil/esp-at
+
+
+##########################################
+other stuff:
+
+https://github.com/hsoft/collapseos
+
