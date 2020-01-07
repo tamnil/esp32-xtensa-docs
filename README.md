@@ -1,6 +1,7 @@
 # esp32 xtensa docs and experiments
 
-included experimental data
+- included experimental data: no c++ optimization on-of delay @80,160,240 MHz
+
 
 
 
