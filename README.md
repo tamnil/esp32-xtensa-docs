@@ -70,6 +70,55 @@ void gpio_iomux_out(uint8_t gpio_num, int func, bool oen_inv);
 esp_err_t gpio_force_hold_all(void);
 ```
 
+i2c defaults
+
+```
+
+I2C_ENTER_CRITICAL_ISR(mux)    portENTER_CRITICAL_ISR(mux)
+I2C_EXIT_CRITICAL_ISR(mux)     portEXIT_CRITICAL_ISR(mux)
+I2C_ENTER_CRITICAL(mux)        portENTER_CRITICAL(mux)
+I2C_EXIT_CRITICAL(mux)         portEXIT_CRITICAL(mux)
+
+I2C_DRIVER_ERR_STR             "i2c driver install error"
+I2C_DRIVER_MALLOC_ERR_STR      "i2c driver malloc error"
+I2C_NUM_ERROR_STR              "i2c number error"
+I2C_TIMEING_VAL_ERR_STR        "i2c timing value error"
+I2C_ADDR_ERROR_STR             "i2c null address error"
+I2C_DRIVER_NOT_INSTALL_ERR_STR "i2c driver not installed"
+I2C_SLAVE_BUFFER_LEN_ERR_STR   "i2c buffer size too small for slave mode"
+I2C_EVT_QUEUE_ERR_STR          "i2c evt queue error"
+I2C_SEM_ERR_STR                "i2c semaphore error"
+I2C_BUF_ERR_STR                "i2c ringbuffer error"
+I2C_MASTER_MODE_ERR_STR        "Only allowed in master mode"
+I2C_MODE_SLAVE_ERR_STR         "Only allowed in slave mode"
+I2C_CMD_MALLOC_ERR_STR         "i2c command link malloc error"
+I2C_TRANS_MODE_ERR_STR         "i2c trans mode error"
+I2C_MODE_ERR_STR               "i2c mode error"
+I2C_SDA_IO_ERR_STR             "sda gpio number error"
+I2C_SCL_IO_ERR_STR             "scl gpio number error"
+I2C_CMD_LINK_INIT_ERR_STR      "i2c command link error"
+I2C_GPIO_PULLUP_ERR_STR        "this i2c pin does not support internal pull-up"
+I2C_ACK_TYPE_ERR_STR           "i2c ack type error"
+I2C_DATA_LEN_ERR_STR           "i2c data read length error"
+I2C_PSRAM_BUFFER_WARN_STR      "Using buffer allocated from psram"
+I2C_LOCK_ERR_STR               "Power lock creation error"
+I2C_FIFO_FULL_THRESH_VAL       (28)
+I2C_FIFO_EMPTY_THRESH_VAL      (5)
+I2C_IO_INIT_LEVEL              (1)
+I2C_CMD_ALIVE_INTERVAL_TICK    (1000 / portTICK_PERIOD_MS)
+I2C_CMD_EVT_ALIVE              (0)
+I2C_CMD_EVT_DONE               (1)
+I2C_EVT_QUEUE_LEN              (1)
+I2C_SLAVE_TIMEOUT_DEFAULT      (32000)     /* I2C slave timeout value, APB clock cycle number */
+I2C_SLAVE_SDA_SAMPLE_DEFAULT   (10)        /* I2C slave sample time after scl positive edge default value */
+I2C_SLAVE_SDA_HOLD_DEFAULT     (10)        /* I2C slave hold time after scl negative edge default value */
+I2C_MASTER_TOUT_CNUM_DEFAULT   (8)         /* I2C master timeout cycle number of I2C clock, after which the timeout interrupt will be triggered */
+I2C_ACKERR_CNT_MAX             (10)
+I2C_FILTER_CYC_NUM_DEF         (7)         /* The number of apb cycles filtered by default*/
+I2C_CLR_BUS_SCL_NUM            (9)
+I2C_CLR_BUS_HALF_PERIOD_US     (5)
+```
+
 mqtt lib
 
 ```
